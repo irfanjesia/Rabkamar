@@ -26,7 +26,8 @@
 
 <body>
 
-    <nav class="navbar pt-4 pb-4 navbar-expand-lg navbar-dark bg-opacity-0 fixed-top" id="navbar" style="transition: 0.5s">
+    <nav class="navbar pt-4 pb-4 navbar-expand-lg navbar-dark bg-opacity-0 fixed-top" id="navbar"
+        style="transition: 0.5s">
         <div class="container">
             <a class="navbar-brand font-weight-bold" href="#">RabKamar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -151,9 +152,9 @@
                 <h3 class="">Tertarik?</h3>
                 <h1 class="display-4 fw-bolder">Pesan Sekarang</h1>
                 <p>Sudah punya akun?</p>
-                <button type="button" class="btn btn-outline-dark btn-lg">Masuk</button>
+                <a href="/login"><button type="button" class="btn btn-outline-dark btn-lg">Masuk</button></a>
                 <p>Belum punya akun?</p>
-                <button type="button" class="btn btn-outline-dark btn-lg">Daftar</button>
+                <a href="/register"><button type="button" class="btn btn-outline-dark btn-lg">Daftar</button></a>
             </div>
             <div class="col-lg-6">
                 <img class="img-fluid"

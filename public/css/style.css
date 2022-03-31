@@ -64,22 +64,38 @@ focus {
     border-radius: 12px;
 }
 
-#img-tertarik{
+#img-tertarik {
     border-radius: 12px;
 }
-.card{
+.card {
     border-radius: 12px;
     border: none;
     background: none;
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 12px;
     height: 50vh;
 }
 
-#footer{
+#footer {
     margin-top: 8rem;
+}
+
+#login-container {
+    background: linear-gradient(to right, #000000, transparent),
+        url(https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80)
+            no-repeat center;
+    height: 100vh;
+}
+
+.form-login {
+    border-radius: 12px;
+}
+.login-form {
+    width: 40vw;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 600px) {
@@ -87,10 +103,16 @@ focus {
         margin-top: -50px;
         height: 35vh;
     }
-    #img-tertarik{
+    #img-tertarik {
         visibility: hidden;
     }
-    .rooms{
+    .rooms {
         height: 20rem;
+    }
+    .login-form {
+        width: 80vw;
+    }
+    .navbar{
+        background-color: black;
     }
 }

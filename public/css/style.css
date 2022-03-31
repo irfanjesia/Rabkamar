@@ -1,0 +1,96 @@
+.jumbotron {
+    background: linear-gradient(to right, #000000, transparent),
+        url(https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+            no-repeat center;
+    height: 100vh;
+}
+
+#jumbotron {
+    margin-top: 10rem;
+}
+
+.info-panel {
+    height: 25vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -120px;
+    padding: 30px;
+}
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+/* A few custom styles for date inputs */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: 1px solid #ecf0f1;
+    background: #ecf0f1;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"],
+focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.welcome {
+    margin-top: 7rem;
+    height: 70vh;
+}
+
+#img-welcome {
+    border-radius: 12px;
+}
+
+#img-tertarik{
+    border-radius: 12px;
+}
+.card{
+    border-radius: 12px;
+    border: none;
+    background: none;
+}
+
+.card-img-top{
+    border-radius: 12px;
+    height: 50vh;
+}
+
+#footer{
+    margin-top: 8rem;
+}
+
+@media screen and (max-width: 600px) {
+    .info-panel {
+        margin-top: -50px;
+        height: 35vh;
+    }
+    #img-tertarik{
+        visibility: hidden;
+    }
+    .rooms{
+        height: 20rem;
+    }
+}

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,7 @@ Route::get('/register', [UserController::class, 'register'])->middleware('guest'
 Route::post('/register', [UserController::class, 'insert']);
 
 Route::get('/home', [UserController::class, 'index'])->middleware('auth');
+
+Route::post('/order', [OrderController::class, 'order'])->middleware('auth');
+
+Route::get('/ordered/{order:id}', [OrderController::class, 'ordered'])->middleware('auth');

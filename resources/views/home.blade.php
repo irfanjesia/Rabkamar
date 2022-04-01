@@ -66,7 +66,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10 info-panel">
                 <form action="">
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-lg">
                             <h3>Tanggal Check In</h3>
                             <input type="date" class="date-input" name="" id="">

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,10 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [UserController::class, 'register'])->middleware('guest')->name('register');
 Route::post('/register', [UserController::class, 'insert']);
 
-Route::get('/home', [UserController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/pesan', [UserController::class, 'pesan'])->middleware('auth');
+
+Route::post('/dashboard/pesan/order', [OrderController::class, 'order'])->middleware('auth');
+
+Route::get('/dashboard/pesan/ordered/{order:id}', [OrderController::class, 'ordered'])->middleware('auth');
+
+Route::get('/dashboard/riwayat/{user:id}', [OrderController::class, 'history'])->middleware('auth');

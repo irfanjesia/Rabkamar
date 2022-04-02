@@ -55,6 +55,16 @@ focus {
     -moz-box-shadow: none;
 }
 
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 .welcome {
     margin-top: 7rem;
     height: 70vh;
@@ -98,6 +108,10 @@ focus {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#bukti-booking{
+    width: 40vw;
+}
+
 @media screen and (max-width: 600px) {
     .info-panel {
         margin-top: -50px;
@@ -112,7 +126,10 @@ focus {
     .login-form {
         width: 80vw;
     }
-    .navbar{
+    .navbar {
         background-color: black;
+    }
+    #bukti-booking{
+        width: 80vw;
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -22,13 +23,18 @@ class OrderController extends Controller
         $order->jumlah_orang = $jumlah_orang;
         $order->save();
         $order_id = $order->id;
-        return redirect('/ordered/'.$order_id);
+        return redirect('/dashboard/pesan/ordered/'.$order_id);
 
     }
 
     public function ordered(Order $order){
         return view('ordered', [
             'ordered' => $order
+        ]);
+    }
+    public function history(User $user){
+        return view('history', [
+            'users' => $user->order
         ]);
     }
 }

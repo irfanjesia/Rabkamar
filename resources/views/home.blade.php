@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hubungi Kami</a>
+                        <a class="nav-link" href="#footer">Hubungi Kami</a>
                     </li>
                 </ul>
                 <a href="/login" class="link-light">Masuk</a>
@@ -164,7 +164,7 @@
         </div>
     </div>
 
-    <div class="container-fluid text-light" style="background-color: black; margin-top: 8rem">
+    <div class="container-fluid text-light" id="footer" style="background-color: black; margin-top: 8rem">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center mt-3">
                 <h3>Rabkamar</h3>

@@ -41,7 +41,7 @@
             </div>
         </div>
 
-        <a class="mt-4 btn btn-lg btn-dark stretched-link" href="/home">Kembali ke Halaman Utama</a>
+        <a class="mt-4 btn btn-lg btn-dark link" href="/home">Kembali ke Halaman Utama</a>
     </div>
 
 

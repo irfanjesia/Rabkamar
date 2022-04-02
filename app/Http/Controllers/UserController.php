@@ -24,7 +24,7 @@ class UserController extends Controller
         return redirect('/login');
     }
 
-    public function index(){
+    public function pesan(){
         return view('index');
     }
 }

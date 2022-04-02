@@ -26,8 +26,8 @@
 
 <body>
 
-    <nav class="navbar pt-4 pb-4 navbar-expand-lg navbar-dark bg-dark bg-opacity-0 fixed-top" id="navbar"
-        style="transition: 0.5s">
+    <nav class="navbar pt-4 pb-4 navbar-dark navbar-expand-lg fixed-top" id="navbar"
+        style="transition: 0.5s; background-color: black">
         <div class="container">
             <a class="navbar-brand font-weight-bold" href="#">RabKamar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +44,7 @@
                         <a class="nav-link" href="#">Akun Saya</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Riwayat Pesanan</a>
+                        <a class="nav-link" href="/dashboard/riwayat/{{ auth()->user()->id }}">Riwayat Pesanan</a>
                     </li>
                 </ul>
                 <a href="#" class="link-light me-3 pe-3 border-end">{{ auth()->user()->name }}</a>
@@ -62,7 +62,7 @@
     </div>
 
     <div class="container mt-5 pb-5">
-        <form action="/order" method="post">
+        <form action="/dashboard/pesan/order" method="post">
             @csrf
             <input type="hidden" name="user" value="{{ auth()->user()->id }}">
 
@@ -188,19 +188,6 @@
     <script src="js/index.js"></script>
 
     <script>
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-
-                document.getElementById("navbar").style.background = "black";
-            } else {
-
-                document.getElementById("navbar").style.background = "none";
-            }
-        }
 
         function upBtnDewasa() {
             let value = parseInt(document.getElementById('jlhDewasa').value, 10);

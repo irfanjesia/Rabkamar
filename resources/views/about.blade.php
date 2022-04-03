@@ -21,7 +21,7 @@
 
     </style>
 
-    <title>RABKAMAR</title>
+    <title>About Us - RabKamar</title>
 </head>
 
 <body>
@@ -38,10 +38,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                        <a class="nav-link" aria-current="page" href="/">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">Tentang Kami</a>
+                        <a class="nav-link active" href="#">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#footer">Hubungi Kami</a>
@@ -58,33 +58,12 @@
             <h1 class="display-4 fw-bolder">Menginap Anda</h1>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.</p>
-            <button type="button" class="btn btn-outline-light btn-lg">Cek Kamar</button>
+            <button type="button" class="btn btn-outline-light btn-lg">Booking</button>
         </div>
     </div>
+
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 info-panel">
-                <form action="">
-                    <div class="row text-center">
-                        <div class="col-lg">
-                            <h3>Tanggal Check In</h3>
-                            <input type="date" class="date-input" name="" id="">
-                        </div>
-                        <div class="col-lg">
-                            <h3>Tanggal Check Out</h3>
-                            <input type="date" class="date-input" name="" id="">
-                        </div>
-                        <div class="col-lg">
-                            <button type="button" class="btn btn-lg btn-outline-dark mt-3">Cek Ketersediaan</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="container welcome">
         <div class="row justify-content-center">
             <div class="col-lg-5">
                 <img class="img-fluid"
@@ -97,6 +76,30 @@
                     incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <h3>Pendiri RabKamar</h3>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.</p>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-lg-3">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1605664042212-73d09aa18a96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                    alt="" id="img-welcome">
             </div>
         </div>
     </div>
@@ -145,24 +148,6 @@
 
     </div>
 
-
-    <div class="container" style="margin-top: 8rem">
-        <div class="row justify-content-center">
-            <div class="col-lg-4">
-                <h3 class="">Tertarik?</h3>
-                <h1 class="display-4 fw-bolder">Pesan Sekarang</h1>
-                <p>Sudah punya akun?</p>
-                <a href="/login"><button type="button" class="btn btn-outline-dark btn-lg">Masuk</button></a>
-                <p>Belum punya akun?</p>
-                <a href="/register"><button type="button" class="btn btn-outline-dark btn-lg">Daftar</button></a>
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid"
-                    src="https://img.freepik.com/free-photo/happy-business-woman-pointing-copyspace_171337-8496.jpg?t=st=1648719411~exp=1648720011~hmac=4a532cdb5a831f5dcd31b39327b1e6e4a026a759d1e833bc26c0d3a1b3799b68&w=826"
-                    alt="" id="img-tertarik">
-            </div>
-        </div>
-    </div>
 
     <div class="container-fluid text-light" id="footer" style="background-color: black; margin-top: 8rem">
         <div class="row justify-content-center">

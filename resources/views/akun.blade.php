@@ -41,14 +41,14 @@
                         <a class="nav-link" aria-current="page" href="/dashboard/pesan">Pesan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dashboard/akun/{{ auth()->user()->id }}">Akun Saya</a>
+                        <a class="nav-link active" href="/dashboard/akun/{{ auth()->user()->id }}">Akun Saya</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dashboard/riwayat/{{ auth()->user()->id }}">Riwayat
+                        <a class="nav-link" href="/dashboard/riwayat/{{ auth()->user()->id }}">Riwayat
                             Pesanan</a>
                     </li>
                 </ul>
-                <a href="/dashboard/akun/{{ auth()->user()->id }}" class="link-light me-3 pe-3 border-end">{{ auth()->user()->name }}</a>
+                <a href="/dashboard/akun/{{ $user->id }}" class="link-light me-3 pe-3 border-end">{{ auth()->user()->name }}</a>
                 <form action="/logout" method="post">
                     @csrf
 
@@ -59,33 +59,39 @@
     </nav>
 
     <div class="container pb-3 border-bottom" style="margin-top: 8rem">
-        <h1 class="display-7 fw-bold text-center">Riwayat Pesanan</h1>
+        <h1 class="display-7 fw-bold text-center">Akun</h1>
     </div>
 
-    <table class="table container">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Tanggal Pemesanan</th>
-                <th scope="col">Jenis Kamar</th>
-                <th scope="col">Jumlah Orang</th>
-                <th scope="col">Bukti Pemesanan</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($users as $user)
-            <tr>
-                <th scope="row"></th>
-                <td>{{ $user->created_at}}</td>
-                <td>{{ $user->kamar->jenis_kamar }}</td>
-                <td>{{ $user->jumlah_orang }}</td>
-                <td><a class="btn btn-dark" href="/dashboard/pesan/ordered/{{ $user->id }}">Lihat</a></td>
-            </tr>
-            @endforeach
+    <div class="container mt-4">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-3">
+                <img class="img-fluid"
+                    src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                    alt="" width="300" height="300" style="border-radius: 50%">
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-5 pe-3 border-end">
+                        <p>Nama : {{ $user->name }}</p>
+                        <p>Email : {{ $user->email }}</p>
+                        <p>Bergabung pada : {{ $user->created_at }}</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <p>Jumlah pesanan : {{ $user->order()->count() }}</p>
+                        <a class="btn btn-outline-dark" href="/dashboard/riwayat/{{ $user->id }}">Riwayat
+                            Pesanan</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="/logout" method="post">
+                        @csrf
 
-        </tbody>
-    </table>
-
+                        <button class="btn btn-danger" type="submit">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/index.js"></script>
 

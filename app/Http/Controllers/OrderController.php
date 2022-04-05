@@ -34,6 +34,7 @@ class OrderController extends Controller
     }
     public function history(User $user){
         return view('history', [
+            'title' => 'riwayat pemesanan',
             'users' => $user->order
         ]);
     }

@@ -27,4 +27,10 @@ class UserController extends Controller
     public function pesan(){
         return view('index');
     }
+
+    public function akun(User $user){
+        return view('akun', [
+            'user' => $user
+        ]);
+    }
 }

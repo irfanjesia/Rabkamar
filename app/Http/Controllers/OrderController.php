@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Order;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Hash;
 
 class OrderController extends Controller
 {
@@ -23,18 +21,21 @@ class OrderController extends Controller
         $order->jumlah_orang = $jumlah_orang;
         $order->save();
         $order_id = $order->id;
-        return redirect('/dashboard/pesan/ordered/'.$order_id);
-
+        return redirect('/dashboard/pesan/ordered/' . $order_id);
     }
 
-    public function ordered(Order $order){
+    public function ordered(Order $order)
+    {
         return view('ordered', [
-            'ordered' => $order
+            'ordered' => $order,
+            'title' => 'Detail Pesanan'
         ]);
     }
-    public function history(User $user){
+    public function history(User $user)
+    {
         return view('history', [
-            'title' => 'riwayat pemesanan',
+            'title' => 'Riwayat Pemesanan',
+            'active' => 'Riwayat',
             'users' => $user->order
         ]);
     }

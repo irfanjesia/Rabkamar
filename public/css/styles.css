@@ -1,0 +1,35 @@
+.br {
+    display: block;
+    margin-bottom: 0em;
+}
+
+.brxsmall {
+    display: block;
+    margin-bottom: 4em;
+}
+
+.brsmall {
+    display: block;
+    margin-bottom: 6em;
+}
+
+.brmedium {
+    display: block;
+    margin-bottom: 8em;
+}
+
+.brlarge {
+    display: block;
+    margin-bottom: 10em;
+}
+
+.bg-jumbotron {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-color-article {
+    background-color: #F1F1F1
+}

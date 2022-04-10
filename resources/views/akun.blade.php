@@ -48,7 +48,8 @@
                             Pesanan</a>
                     </li>
                 </ul>
-                <a href="/dashboard/akun/{{ $user->id }}" class="link-light me-3 pe-3 border-end">{{ auth()->user()->name }}</a>
+                <a href="/dashboard/akun/{{ $user->id }}"
+                    class="link-light me-3 pe-3 border-end">{{ auth()->user()->name }}</a>
                 <form action="/logout" method="post">
                     @csrf
 
@@ -75,19 +76,18 @@
                         <p>Nama : {{ $user->name }}</p>
                         <p>Email : {{ $user->email }}</p>
                         <p>Bergabung pada : {{ $user->created_at }}</p>
+
+                        <form action="/logout" method="post">
+                            @csrf
+
+                            <button class="btn btn-danger" type="submit">Logout</button>
+                        </form>
                     </div>
                     <div class="col-lg-5">
                         <p>Jumlah pesanan : {{ $user->order()->count() }}</p>
                         <a class="btn btn-outline-dark" href="/dashboard/riwayat/{{ $user->id }}">Riwayat
                             Pesanan</a>
                     </div>
-                </div>
-                <div class="row">
-                    <form action="/logout" method="post">
-                        @csrf
-
-                        <button class="btn btn-danger" type="submit">Logout</button>
-                    </form>
                 </div>
             </div>
         </div>

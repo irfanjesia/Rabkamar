@@ -19,7 +19,8 @@ use App\Http\Controllers\Controller;
 
 Route::get('/', function () {
     return view('home');
-})->middleware('guest');
+})->middleware('guest')->name('home');
+
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 

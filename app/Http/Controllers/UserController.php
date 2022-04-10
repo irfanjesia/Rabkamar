@@ -4,16 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller;
+// use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    public function register(){
-        return view('register');
+    public function register()
+    {
+        return view('register', [
+            "title" => "Daftar"
+        ]);
     }
 
-    public function insert(Request $request){
+    public function insert(Request $request)
+    {
         $validated = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email',
@@ -24,13 +28,20 @@ class UserController extends Controller
         return redirect('/login');
     }
 
-    public function pesan(){
-        return view('index');
+    public function pesan()
+    {
+        return view('index', [
+            'title' => 'Pesan',
+            'active' => 'Pesan'
+        ]);
     }
 
-    public function akun(User $user){
+    public function akun(User $user)
+    {
         return view('akun', [
-            'user' => $user
+            'user' => $user,
+            'title' => 'Akun',
+            'active' => 'Akun'
         ]);
     }
 }

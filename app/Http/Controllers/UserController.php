@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-// use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -40,7 +39,7 @@ class UserController extends Controller
     {
         return view('akun', [
             'user' => $user,
-            'title' => 'Akun',
+            'title' => 'Akun Saya',
             'active' => 'Akun'
         ]);
     }

@@ -30,7 +30,7 @@ class UserController extends Controller
     public function pesan()
     {
         return view('index', [
-            'title' => 'Rabkamar',
+            'title' => 'Pesan',
             'active' => 'Pesan'
         ]);
     }
@@ -39,7 +39,7 @@ class UserController extends Controller
     {
         return view('akun', [
             'user' => $user,
-            'title' => 'Akun',
+            'title' => 'Akun Saya',
             'active' => 'Akun'
         ]);
     }

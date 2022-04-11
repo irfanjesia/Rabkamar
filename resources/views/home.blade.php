@@ -8,7 +8,7 @@
 <div class="position-relative">
     <div class="jumbotron jumbotron-fluid text-light bg-jumbotron" style="background-image: url('img/jumbotron.png')">
         <div class="container my-5" id="jumbotron">
-            <h3 class="">Piihan Terbaik</h3>
+            <h3>Piihan Terbaik</h3>
             <h1 class="display-4 fw-bolder">Menginap Anda</h1>
             <p class="lead">Rabkamar adalah salah satu hotel mewah terbaik di negara kita. Kami menawarkan akomodasi berkualitas tinggi dengan berbagai macam kamar, layanan, dan fasilitas yang tersedia untuk semua tamu kami.</p>
             <span class="brlarge"></span>
@@ -49,7 +49,7 @@
         <div class="col-lg-6 my-4 justify-content-center">
             <h3>Selamat Datang di RabKamar</h3>
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                incididunt ut labore et dolore magna aliqua.<br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
         </div>
     </div>

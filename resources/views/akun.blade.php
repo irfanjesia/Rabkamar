@@ -23,7 +23,7 @@
                     <p>Bergabung pada : {{ $user->created_at }}</p>
                     <form action="/logout" method="post">
                         @csrf
-                        <button class="btn btn-danger" type="submit">Logout</button>
+                        <button class="btn btn-danger" type="submit">Keluar</button>
                     </form>
                 </div>
                 <div class="col-lg-5 pb-4 mx-3">

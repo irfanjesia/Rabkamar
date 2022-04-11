@@ -13,7 +13,7 @@
 <div class="container mt-3">
     <div class="row justify-content-center align-items-center">
         <div class="col-lg-3 my-3">
-            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="" width="300" height="300">
+            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="profile picture" width="300" height="300">
         </div>
         <div class="col-lg-9">
             <div class="row">

@@ -20,17 +20,17 @@
     </div>
     <div class="row my-5">
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/breakfast.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/breakfast.svg') }}" alt="dish">
             <h5 class="mt-4">Sarapan</h5>
             <p class="mt-4">Gratis 2 porsi sarapan<br>untuk setiap kamar</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/wifi.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/wifi.svg') }}" alt="wifi signal">
             <h5 class="mt-4">Wifi</h5>
             <p class="mt-4">Layanan wifi berkecepatan<br>tinggi selama 24 jam</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/taxi.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/car.svg') }}" alt="free parking">
             <h5 class="mt-4">Bebas Parkir</h5>
             <p class="mt-4">Bebas biaya parkir untuk<br>penginap hotel</p>
         </div>

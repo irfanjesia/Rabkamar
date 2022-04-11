@@ -44,7 +44,7 @@
     <span class="brmedium"></span>
     <div class="row">
         <div class="col-lg-6 my-4">
-            <img class="img-fluid rounded-3" src="{{ URL::asset('img/welcome.png') }}" alt="" id="img-welcome">
+            <img class="img-fluid rounded-3" src="{{ URL::asset('img/welcome.png') }}" alt="hotel" id="img-welcome">
         </div>
         <div class="col-lg-6 my-4 justify-content-center">
             <h3>Selamat Datang di RabKamar</h3>
@@ -72,19 +72,19 @@
             <div class="container">
                 <div class="card-group text-center mb-5 ">
                     <div class="card m-4 rounded-3">
-                        <img src="{{ URL::asset('img/suite-room.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ URL::asset('img/suite-room.png') }}" class="card-img-top" alt="suite room">
                         <div class="card-body">
                             <h5 class="card-title">Suite</h5>
                         </div>
                     </div>
                     <div class="card m-4 rounded-3">
-                        <img src="{{ URL::asset('img/reguler-room.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ URL::asset('img/reguler-room.png') }}" class="card-img-top" alt="reguler room">
                         <div class="card-body">
                             <h5 class="card-title">Reguler</h5>
                         </div>
                     </div>
                     <div class="card m-4 rounded-3">
-                        <img src="{{ URL::asset('img/family-room.png') }}" class="card-img-top" alt="...">
+                        <img src="{{ URL::asset('img/family-room.png') }}" class="card-img-top" alt="family room">
                         <div class="card-body">
                             <h5 class="card-title">Family</h5>
                         </div>
@@ -125,23 +125,23 @@
 
     <div class="row my-5">
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/harga-bersahabat.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/harga-bersahabat.svg') }}" alt="piggy bank">
             <p class="mt-4">Harga bersahabat</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/bebas-biaya-booking.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/bebas-biaya-booking.svg') }}" alt="no booking fee">
             <p class="mt-4">Bebas biaya<br>booking</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/bebas-biaya-kartu-kredit.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/bebas-biaya-kartu-kredit.svg') }}" alt="no credit card">
             <p class="mt-4">Bebas biaya<br>kartu kredit</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/bebas-kustomisasi.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/bebas-kustomisasi.svg') }}" alt="flexible to modify">
             <p class="mt-4">Bebas<br>kustomisasi</p>
         </div>
         <div class="col text-center">
-            <img src="{{ URL::asset('svg/bayar-di-hotel.svg') }}" alt="">
+            <img src="{{ URL::asset('svg/bayar-di-hotel.svg') }}" alt="pay at hotel">
             <p class="mt-4">Bayar di hotel</p>
         </div>
     </div>

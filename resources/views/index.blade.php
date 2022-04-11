@@ -34,7 +34,7 @@
                         <div class="container">
                             <div class="card-group text-center">
                                 <div class="card m-3 rounded-3">
-                                    <img src="{{ URL::asset('img/suite-room.png') }}" class="card-img-top" alt="...">
+                                    <img src="{{ URL::asset('img/suite-room.png') }}" class="card-img-top" alt="suite room">
                                     <div class="card-body">
                                         <h5 class="card-title">Suite</h5>
                                         <input type="radio" class="btn-check" name="kamar" value="1" id="option1" autocomplete="off" checked>
@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 <div class="card m-3 rounded-3">
-                                    <img src="{{ URL::asset('img/reguler-room.png') }}" class="card-img-top" alt="...">
+                                    <img src="{{ URL::asset('img/reguler-room.png') }}" class="card-img-top" alt="reguler room">
                                     <div class="card-body">
                                         <h5 class="card-title">Reguler</h5>
                                         <input type="radio" class="btn-check" name="kamar" value="2" id="option2" autocomplete="off" checked>
@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="card m-3 rounded-3">
-                                    <img src="{{ URL::asset('img/family-room.png') }}" class="card-img-top" alt="...">
+                                    <img src="{{ URL::asset('img/family-room.png') }}" class="card-img-top" alt="family room">
                                     <div class="card-body">
                                         <h5 class="card-title">Family</h5>
                                         <input type="radio" class="btn-check" name="kamar" value="3" id="option3" autocomplete="off" checked>

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-// use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -31,7 +30,7 @@ class UserController extends Controller
     public function pesan()
     {
         return view('index', [
-            'title' => 'Pesan',
+            'title' => 'Rabkamar',
             'active' => 'Pesan'
         ]);
     }

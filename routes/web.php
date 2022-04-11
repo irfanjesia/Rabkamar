@@ -21,7 +21,7 @@ Route::get('/', function () {
         'title' => 'Rabkamar',
         'active' => 'Home'
     ]);
-})->middleware('guest');
+})->middleware('guest')->name('home');
 
 Route::get('/about', function () {
     return view('about', [

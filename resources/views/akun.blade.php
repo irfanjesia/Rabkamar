@@ -13,7 +13,7 @@
 <div class="container mt-3">
     <div class="row justify-content-center align-items-center">
         <div class="col-lg-3 my-3">
-            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80">
+            <img class="img-fluid rounded-circle" src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="" width="300" height="300">
         </div>
         <div class="col-lg-9">
             <div class="row">
@@ -21,6 +21,10 @@
                     <p>Nama : {{ $user->name }}</p>
                     <p>Email : {{ $user->email }}</p>
                     <p>Bergabung pada : {{ $user->created_at }}</p>
+                    <form action="/logout" method="post">
+                        @csrf
+                        <button class="btn btn-danger" type="submit">Logout</button>
+                    </form>
                 </div>
                 <div class="col-lg-5 pb-4 mx-3">
                     <p>Jumlah pesanan : {{ $user->order()->count() }}</p>

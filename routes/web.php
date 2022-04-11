@@ -18,7 +18,7 @@ use App\Http\Controllers\OrderController;
 
 Route::get('/', function () {
     return view('home', [
-        'title' => 'Rabkamar',
+        'title' => 'Home',
         'active' => 'Home'
     ]);
 })->middleware('guest')->name('home');

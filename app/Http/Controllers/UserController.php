@@ -43,4 +43,9 @@ class UserController extends Controller
             'active' => 'Akun'
         ]);
     }
+
+    public function show(Request $request)
+    {
+        return $request->user();
+    }
 }

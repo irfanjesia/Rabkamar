@@ -14,7 +14,16 @@ class OrderController extends Controller
         $jumlah_orang = $request->jumlah_orang_dewasa + $request->jumlah_orang_anak;
 
         $order = new Order;
+        //Check for update order don't change existing order user_id to admin's user_id
+        if (Order::find('id') && $request->user()->is_admin) {
+            $order->user_id = old('user_id');
+        }
+        //Admin can add user name data
+        if ($request->user()->is_admin) {
+            $order->name = $request->name;
+        }
         $order->user_id = $request->user;
+        $order->user_name = $request->user()->name;
         $order->kamar_id = $request->kamar;
         $order->tanggal_masuk = $request->tanggal_masuk;
         $order->tanggal_keluar = $request->tanggal_keluar;
@@ -31,6 +40,7 @@ class OrderController extends Controller
             'title' => 'Detail Pesanan'
         ]);
     }
+    
     public function history(User $user)
     {
         return view('history', [

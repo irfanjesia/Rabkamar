@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\AdminOrderController;
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\AdminOrderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 

@@ -24,8 +24,8 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
-Route::get('/order', [AdminOrderController::class, 'index']);
-Route::get('/order/{id}', [AdminOrderController::class, 'show']);
-Route::post('/order', [AdminOrderController::class, 'store']);
-Route::put('/order/{id}', [AdminOrderController::class, 'update']);
-Route::delete('/order/{id}', [AdminOrderController::class, 'destroy']);
+Route::get('/order', [AdminOrderController::class, 'index'])->middleware('auth:sanctum');
+Route::get('/order/{id}', [AdminOrderController::class, 'show'])->middleware('auth:sanctum');
+Route::post('/order', [AdminOrderController::class, 'store'])->middleware('auth:sanctum');
+Route::put('/order/{id}', [AdminOrderController::class, 'update'])->middleware('auth:sanctum');
+Route::delete('/order/{id}', [AdminOrderController::class, 'destroy'])->middleware('auth:sanctum');
